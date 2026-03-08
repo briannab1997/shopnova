@@ -15,11 +15,12 @@ build/
 .env.test.local
 .env.production.local
 
-# Editor
+# Editor / local tooling
 .vscode/
 .idea/
 *.swp
 *.swo
+.claude/
 
 # OS
 .DS_Store
