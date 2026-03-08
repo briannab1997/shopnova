@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "ShopNova",
+    "slug": "shopnova",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#232f3e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shopnova.app"
+    },
+    "android": {
+      "package": "com.shopnova.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#232f3e",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store"
+    ]
+  }
+}
