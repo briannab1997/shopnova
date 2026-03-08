@@ -1,0 +1,61 @@
+:root {
+  --color-navy: #232f3e;
+  --color-navy-light: #37475a;
+  --color-navy-mid: #131921;
+  --color-orange: #ff9900;
+  --color-orange-dark: #e68a00;
+  --color-gold: #f0c040;
+  --color-gold-dark: #d4a800;
+  --color-teal: #00a8a8;
+
+  --color-bg: #f3f3f3;
+  --color-bg-white: #ffffff;
+  --color-text-primary: #0f1111;
+  --color-text-secondary: #565959;
+  --color-text-muted: #888;
+  --color-text-price: #b12704;
+  --color-border: #ddd;
+  --color-border-light: #e8e8e8;
+
+  --color-success: #067d62;
+  --color-error: #cc0c39;
+  --color-warning: #ff9900;
+  --color-star: #ffa41c;
+
+  --font-primary: 'Amazon Ember', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.375rem;
+  --font-size-2xl: 1.75rem;
+  --font-size-3xl: 2.25rem;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  --radius-sm: 4px;
+  --radius-base: 8px;
+  --radius-lg: 12px;
+  --radius-full: 9999px;
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.12);
+  --shadow-card-hover: 0 6px 20px rgba(0, 0, 0, 0.18);
+  --shadow-navbar: 0 2px 8px rgba(0, 0, 0, 0.25);
+  --shadow-dropdown: 0 4px 16px rgba(0, 0, 0, 0.2);
+
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.4s ease;
+
+  --navbar-height: 60px;
+  --category-bar-height: 40px;
+  --max-width: 1440px;
+}

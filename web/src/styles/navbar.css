@@ -1,0 +1,215 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--color-navy);
+  box-shadow: var(--shadow-navbar);
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 0 var(--space-4);
+  height: var(--navbar-height);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  color: #fff;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast);
+  text-decoration: none;
+}
+.navbar-logo:hover {
+  border-color: #fff;
+}
+.navbar-logo-name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+.navbar-logo-name span {
+  color: var(--color-orange);
+}
+.navbar-logo-sub {
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 0.5px;
+}
+
+/* Search bar */
+.navbar-search {
+  flex: 1;
+  display: flex;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.navbar-search-category {
+  background: #f3f3f3;
+  border: none;
+  padding: 0 var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+  min-width: 50px;
+  display: none;
+}
+.navbar-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 var(--space-3);
+  font-size: var(--font-size-base);
+  background: #fff;
+}
+.navbar-search-btn {
+  background: var(--color-orange);
+  border: none;
+  padding: 0 var(--space-4);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast);
+}
+.navbar-search-btn:hover {
+  background: var(--color-orange-dark);
+}
+.navbar-search-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+/* Nav actions */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+.nav-btn {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+  cursor: pointer;
+  text-align: left;
+  white-space: nowrap;
+}
+.nav-btn:hover {
+  border-color: #fff;
+}
+.nav-btn-sub {
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.75);
+}
+.nav-btn-main {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+/* Cart button */
+.nav-cart {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+  color: #fff;
+  padding: var(--space-1) var(--space-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast);
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav-cart:hover {
+  border-color: #fff;
+}
+.nav-cart svg {
+  width: 28px;
+  height: 28px;
+}
+.nav-cart-count {
+  position: absolute;
+  top: 2px;
+  left: 20px;
+  background: var(--color-orange);
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+.nav-cart-label {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  align-self: flex-end;
+}
+
+/* Category bar */
+.category-bar {
+  background: var(--color-navy-light);
+  height: var(--category-bar-height);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.category-bar::-webkit-scrollbar {
+  display: none;
+}
+.category-bar-inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  white-space: nowrap;
+}
+.category-link {
+  color: #fff;
+  font-size: var(--font-size-sm);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+  text-decoration: none;
+}
+.category-link:hover,
+.category-link.active {
+  border-color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .navbar-search-category {
+    display: none;
+  }
+  .nav-btn-sub {
+    display: none;
+  }
+  .nav-btn:not(.nav-sign) {
+    display: none;
+  }
+}
