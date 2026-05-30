@@ -5,6 +5,14 @@ A full-stack Amazon-inspired storefront built as a portfolio project. Demonstrat
 ## Live Demo
 **Web:** https://briannab1997.github.io/shopnova/
 
+## Screenshot
+
+![ShopNova storefront](assets/shopnova.png)
+
+## Why This Project
+
+ShopNova is one of my strongest portfolio projects because it shows full application thinking: product browsing, search, cart state, checkout flow, account data, responsive UI, and a deployment pipeline. I built it to practice the kinds of patterns that show up in real customer-facing software, including state management, reusable components, validation, and user flows that need to stay consistent across multiple pages.
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -27,6 +35,13 @@ A full-stack Amazon-inspired storefront built as a portfolio project. Demonstrat
 - **Account** — Order history with status badges, editable profile
 - **Search** — Client-side full-text product search
 - **Auth** — Sign up / sign in via localStorage (no backend required); cart and orders persist per user
+
+### Engineering Highlights
+- TypeScript interfaces for product, cart, order, and user data
+- Reusable React components for product cards, navigation, layout, and checkout steps
+- Client-side persistence for demo authentication, cart state, profile data, and orders
+- GitHub Actions deployment for the static web demo
+- Supabase schema reference for how the mock data could map to a real backend
 
 ### Mobile App (React Native + Expo)
 - Bottom tab navigation: Home, Products, Cart, Account
@@ -78,6 +93,10 @@ npm install
 npx expo start
 # Scan the QR code with Expo Go on your phone
 ```
+
+## Portfolio Summary
+
+ShopNova demonstrates full-stack product thinking, TypeScript/React development, responsive e-commerce workflows, cart and checkout state, mock authentication, mobile app structure, and CI/CD deployment.
 
 ## Key Technical Decisions
 
